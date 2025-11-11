@@ -6,7 +6,7 @@ import json
 import re
 import hashlib
 import tempfile
-import mysql.connector
+import mysql.connector  
 from mysql.connector import Error
 from sqlalchemy import create_engine
 from datetime import timedelta
@@ -43,7 +43,7 @@ except Exception:
 # ===============================
 # App config + Theme (Deep Purple, professional)
 # ===============================
-st.set_page_config(page_title="Food Policy Analyzer", layout="wide")
+st.set_page_config(page_title="Food Policy, NCDS MODEL", layout="wide")
 
 st.markdown("""
 <style>
@@ -965,7 +965,7 @@ if choice == "Analyze PDF":
 # 📊 ANALYZE EXCEL (live Google Sheet + upload) with NO manual toggling
 # =================================
 if choice == "Analyze Excel":
-    st.title("Food Policy & Industry Interference Analyzer")
+    st.title("Food Policy, NCDS MODEL")
     st.markdown("""
     <div style="background:#f4f2ff; padding:12px 16px; border:1px solid #e0d7ff; border-radius:12px;">
     Use the live Google Sheet or upload a file. No manual checkboxes — choose a selection mode
